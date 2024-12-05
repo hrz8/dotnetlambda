@@ -41,3 +41,15 @@ functions:
     - httpApi:
         method: GET
         path: /api/values
+    - httpApi:
+        method: GET
+        path: /api/values/{id}
+    - httpApi:
+        method: POST
+        path: /api/values/
+    - httpApi:
+        method: PUT
+        path: /api/values/{id}
+    - httpApi:
+        method: DELETE
+        path: /api/values/{id}
