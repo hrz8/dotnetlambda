@@ -1,0 +1,43 @@
+org: hrz88
+service: booking
+
+frameworkVersion: ^4.4.13
+configValidationMode: error
+
+provider:
+  name: aws
+  runtime: dotnet8
+  architecture: arm64
+  stage: ${opt:stage, 'local'}
+  region: ${opt:region, 'us-east-1'}
+  httpApi:
+    cors:
+      allowedOrigins:
+        - '*'
+
+custom:
+  stage: ${opt:stage, 'local'}
+  localstack:
+    debug: false
+    stages:
+      - local
+    host: http://localhost
+    edgePort: 4566
+    lambda:
+      mountCode: false
+
+plugins:
+  - serverless-localstack
+
+package:
+  individually: true
+
+functions:
+  restapi:
+    handler: BookingServerless::BookingServerless.LambdaEntryPoint::FunctionHandlerAsync
+    package: 
+      artifact: bin/Release/net8.0/BookingServerless.zip
+    events:
+    - httpApi:
+        method: GET
+        path: /api/values
