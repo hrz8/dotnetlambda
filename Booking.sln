@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingWorker", "BookingWor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingMvc", "BookingMvc\BookingMvc.csproj", "{703631D8-364D-4DF5-A311-8C77BF8E96C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingServerless", "BookingServerless\BookingServerless.csproj", "{C9A212B0-2D1D-4FFC-A9B2-7BECF114397D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{703631D8-364D-4DF5-A311-8C77BF8E96C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{703631D8-364D-4DF5-A311-8C77BF8E96C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{703631D8-364D-4DF5-A311-8C77BF8E96C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A212B0-2D1D-4FFC-A9B2-7BECF114397D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A212B0-2D1D-4FFC-A9B2-7BECF114397D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A212B0-2D1D-4FFC-A9B2-7BECF114397D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A212B0-2D1D-4FFC-A9B2-7BECF114397D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
